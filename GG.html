@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Динисламыч - гайды по вардам в Dota 2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --dota-red: #e83119;
+            --dota-blue: #1d8dfb;
+            --bg-dark: #121212;
+            --text-light: #f0f0f0;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(90deg, var(--dota-red), var(--dota-blue));
+            padding: 1rem 0;
+            text-align: center;
+            position: relative;
+        }
+        
+        .logo {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 1.8rem;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .hero-img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--dota-red);
+            box-shadow: 0 0 25px rgba(232, 49, 25, 0.6);
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .hero-img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 35px rgba(232, 49, 25, 0.8);
+        }
+        
+        .hero-avatar {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .avatar-badge {
+            position: absolute;
+            bottom: -10px;
+            right: -10px;
+            background: #e83119;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .guides {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem 0;
+        }
+        
+        .guide-card {
+            background: #1e1e1e;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            border-left: 4px solid var(--dota-red);
+        }
+        
+        .guide-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .guide-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .guide-card:hover .guide-img {
+            transform: scale(1.1);
+        }
+        
+        .guide-content {
+            padding: 1rem;
+        }
+        
+        .guide-title {
+            color: var(--dota-blue);
+            margin-top: 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--dota-red);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: all 0.3s;
+        }
+        
+        .btn:hover {
+            background: #c62828;
+            transform: scale(1.05);
+        }
+        
+        footer {
+            background: #1a1a1a;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 1.4rem;
+            }
+            
+            .guides {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-img {
+                width: 180px;
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">ДИНИСЛАМЫЧ</div>
+            <p>Гуру вардов в Dota 2</p>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-avatar">
+            <img src="https://i.ibb.co/rRHk4C5b/dinislamych.jpg" 
+                 alt="Динисламыч - эксперт по вардам" 
+                 class="hero-img"
+                 loading="lazy">
+            <div class="avatar-badge">12K MMR</div>
+        </div>
+        <h1>Топовые гайды по закупке и установке вардов</h1>
+        <p>От калибра Herald до Immortal с правильными вардами!</p>
+    </section>
+    
+    <div class="container">
+        <section class="guides">
+            <!-- Гайд 1 -->
+            <article class="guide-card">
+                <img src="https://i.ibb.co/FL4kKSvd/ward-guide1.jpg" 
+                     alt="Основные точки для вардов" 
+                     class="guide-img" 
+                     loading="lazy">
+                <div class="guide-content">
+                    <h3 class="guide-title">Ключевые точки для вардов</h3>
+                    <p>Лучшие места для установки наблюдательных вардов на всех этапах игры.</p>
+                    <a href="#" class="btn">Читать гайд</a>
+                </div>
+            </article>
+            
+            <!-- Гайд 2 -->
+            <article class="guide-card">
+                <img src="https://i.ibb.co/MxfKV13w/ward-guide2.jpg" 
+                     alt="Контрвардинг" 
+                     class="guide-img" 
+                     loading="lazy">
+                <div class="guide-content">
+                    <h3 class="guide-title">Искусство контрвардинга</h3>
+                    <p>Как находить и уничтожать вражеские варды. Карта всех популярных точек.</p>
+                    <a href="#" class="btn">Читать гайд</a>
+                </div>
+            </article>
+            
+            <!-- Гайд 3 -->
+            <article class="guide-card">
+                <img src="https://i.ibb.co/r9HZFZm/ward-guide3.jpg" 
+                     alt="Продвинутый вардинг" 
+                     class="guide-img" 
+                     loading="lazy">
+                <div class="guide-content">
+                    <h3 class="guide-title">Вардинг для высокого MMR</h3>
+                    <p>Продвинутые техники вардинга, которые используют про-игроки.</p>
+                    <a href="#" class="btn">Читать гайд</a>
+                </div>
+            </article>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 Динисламыч. Все права на Dota 2 принадлежат Valve Corporation.</p>
+            <p>Контакты для коллабов: <a href="https://vk.com/gojira667" style="color: var(--dota-blue);">https://vk.com/gojira667</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Анимация при загрузке
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.guide-card');
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 200 * index);
+            });
+            
+            // Изначальные стили для анимации
+            const style = document.createElement('style');
+            style.textContent = `
+                .guide-card {
+                    opacity: 0;
+                    transform: translateY(20px);
+                    transition: opacity 0.5s, transform 0.5s;
+                }
+            `;
+            document.head.appendChild(style);
+        });
+
+        // Аналитика (пример)
+        console.log('Сайт загружен! MMR скоро вырастет!');
+    </script>
+</body>
+</html>
